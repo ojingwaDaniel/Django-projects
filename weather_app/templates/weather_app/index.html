@@ -5,9 +5,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
-    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 <body>
+  <nav class="nav-bar">
+    <div class="nav-bar-side-1">
+      <h2>Weather App</h2>
+      <span>Using Django Framework</span>
+    </div>
+    <ul class="nav-bar-side-2">
+      <li><a href="">Open Weather</a></li>
+      <li><a href=""> Open Api</a></li>
+      </ul>
+  </nav>
+
+  <body>
+    <div class="header-container">
+        <h1 class="header--h1">Weather DeskTop App</h1>
+        <p class="header--p">Using Python Language and Django Framework</p>
+        <img src="{% static 'images/pngegg.png'%}" alt="weather-logo" class="image">
+    </div>
 
 <form method="post">
   {% csrf_token %}
